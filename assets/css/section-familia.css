@@ -1,0 +1,146 @@
+.group10 {
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    height: 80vh;
+}
+
+.group10-infos {
+    margin-bottom: 130px;
+}
+
+.group10 p {
+    margin-top: 0px;
+}
+
+.group10 h1 {
+    margin-bottom: 0px;
+}
+
+.group10 img {
+    width: 80%;
+    position: relative;
+    bottom: -35px;
+}
+
+.group10 h1 {
+    line-height: 100px;
+}
+
+.group10-font-1 {
+    /* font-size: 8vh; */
+    font-size: 3.5em;
+    font-family: 'Bungee Outline', cursive;
+    font-weight: lighter;
+    line-height: 0px;
+}
+
+.group10-font-2 {
+    font-size: 1.5em;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: lighter;
+    line-height: 0px;
+}
+
+.unidades-group10 {
+    display: flex;
+    justify-content: center;
+}
+
+.unidades-group10 h2 {
+    text-align: center;
+    font-size: 8vh;
+    padding: 40px 0 0 0;
+    margin: 0;
+}
+
+.unidades-group10 p {
+    text-align: center;
+}
+
+/* RESPOSIVIDADE */
+@media (max-width:1300px) {
+    .group10-infos {
+        margin-bottom: 130px;
+    }
+
+    .group10 img {
+        width: 95%;
+    }
+
+    .group10-infos {
+        margin-bottom: 0px;
+    }
+
+    @media (max-width:900px) {
+        .group10-font-1 {
+            font-size: 3em;
+        }
+
+        .group10-font-2 {
+            font-size: 1.2em;
+        }
+
+        .group-p-text {
+            font-size: 2vh;
+        }
+
+        .unidades-group10 p {
+            font-size: 2vh;
+        }
+
+        .unidades-group10 h2 {
+            font-size: 4vh;
+        }
+
+        .group10 h1 {
+            line-height: 70px;
+        }
+    }
+
+    @media (max-width:785px) {
+        .group10 {
+            height: 60vh;
+        }
+
+        .group10-img img {
+            display: none;
+        }
+    }
+
+    @media (max-width:650px) {
+        .group10-font-1 {
+            font-size: 2.7em;
+        }
+
+        .group10-font-2 {
+            font-size: 1em;
+        }
+    }
+
+    @media (max-width:540px) {
+        .group10-font-1 {
+            font-size: 2.2em;
+        }
+
+        .group10-font-2 {
+            font-size: 1em;
+        }
+    }
+
+    @media (max-width:450px) {
+        .group10-font-1 {
+            font-size: 1.9em;
+        }
+
+        .group10-font-2 {
+            font-size: 0.8em;
+        }
+
+        .unidades-group10 p {
+            font-size: 2vh;
+        }
+
+
+    }
+}

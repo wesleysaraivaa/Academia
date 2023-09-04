@@ -1,0 +1,109 @@
+.capa {
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    justify-content: space-between;
+}
+
+.capa-text {
+    max-width: 37rem;
+    line-height: 1rem;
+    width: 100%;
+}
+
+.capa-text h1 {
+    font-size: 10vh;
+    font-family: 'Bungee Outline', cursive;
+    font-weight: lighter;
+}
+
+.capa-text h2 {
+    font-size: 12vh;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.capa-text p {
+    font-size: 2vh;
+    margin-bottom: 1.5rem;
+}
+
+.capa button {
+    width: 150px;
+    background-color: var(--black-light);
+    color: var(--white-color);
+    border: none;
+    border-top-right-radius: 30px;
+    font-size: 26px;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.capa button:hover {
+    background: var(--black-color);
+    box-shadow: 5px 5px 5px var(--white-color);
+    transform: scale(1.1);
+    transition: 500ms;
+}
+
+.capa button img {
+    width: 20px;
+    padding-left: 10px;
+}
+
+.capa-img {
+    padding-bottom: 0px
+}
+
+.capa-img img {
+    width: 90%;
+    margin-top: 20px;
+}
+
+/* RESPOSIVIDADE */
+/* MAX-WIDTH - TELAS MENORES QUE 
+    RESOLUCOES MAIORES PARA MENORES
+    */
+@media (max-width:970px) {
+    .capa-text h1 {
+        font-size: 7.5vh;
+    }
+
+    .capa-text h2 {
+        font-size: 9.5vh;
+    }
+
+    @media (max-width:785px) {
+        .capa {
+            padding: 5px 2%;
+            flex-direction: column;
+            text-align: center;
+            gap: 2rem;
+        }
+
+        .capa-text h1 {
+            font-size: 6vh;
+        }
+
+        .capa-text h2 {
+            font-size: 7vh;
+        }
+
+        .capa p {
+            font-size: 2vh;
+            margin: 0 15px 20px 15px;
+        }
+
+        .capa-img img {
+            padding: 0;
+            margin: 0;
+            width: 190px;
+        }
+
+        .capa button {
+            font-size: 20px;
+            width: 150px;
+            padding: 5px;
+        }
+    }
+}

@@ -1,0 +1,138 @@
+.contato {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1E1E1E;
+    padding: 0 10%;
+}
+
+.contato-content {
+    align-items: center;
+    display: flex;
+}
+
+.contato-text {
+    margin-top: 50px;
+}
+
+.contato-text h1 {
+    font-size: 10.5vh;
+    line-height: 0px;
+}
+
+.contato p {
+    font-size: 24px;
+}
+
+.contato-tels {
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    margin: 5px;
+}
+
+.contato-tels input {
+    width: 234px;
+    height: 42px;
+    border-radius: 0 20px 0 0;
+    border: 1px solid #FFFFFF;
+    background-color: #1E1E1E;
+    font-size: 18px;
+    color: var(--white-color);
+}
+
+.contato-tels button {
+    background-color: #FF3939;
+    color: var(--white-color);
+    border: none;
+    border-radius: 0 20px 0 0;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    width: 234px;
+    height: 42px;
+    cursor: pointer;
+}
+
+.contato-tels button:hover {
+    background: var(--black-color);
+    box-shadow: 5px 5px 5px var(--white-color);
+}
+
+.contato-img {
+    margin-top: -135px;
+}
+
+.div-contato-img {
+    margin-bottom: -4px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width:1300px) {
+    .contato {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contato img {
+        margin-top: 0px;
+        width: 100%;
+        height: 470px;
+    }
+
+    .contato-content {
+        align-items: center;
+    }
+
+    @media (max-width:1145px) {
+
+        .contato-text h1 {
+            font-size: 6vh;
+        }
+
+        .contato p {
+            font-size: 2vh;
+        }
+
+        .contato-img {
+            top: 0px;
+            height: 80%;
+        }
+    }
+
+    @media (max-width:890px) {
+        .contato-img {
+            height: 60%;
+        }
+
+        .contato-text h1 {
+            font-size: 4.5vh;
+        }
+
+        .contato p {
+            font-size: 1.8vh;
+        }
+
+        .contato img {
+            height: 370px;
+        }
+    }
+
+    @media (max-width:785px) {
+        .contato img {
+            display: none;
+        }
+
+        .contato-content {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .contato-tels {
+            justify-content: center;
+
+        }
+    }
+}

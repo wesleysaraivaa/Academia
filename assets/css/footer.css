@@ -1,0 +1,25 @@
+.footer {
+    width: 100%;
+    height: 70px;
+    padding: 5px 0 5px 0;
+}
+
+.text-footer {
+    font-size: 0.6em;
+    text-align: center;
+}
+
+
+/* RESPONSIVIDADE */
+@media (max-width:785px) {
+    .footer {
+        margin-bottom: 10px;
+        height: 40px;
+        padding: 5px 0 5px 0;
+    }
+
+    .text-footer {
+        font-size: 0.4em;
+        text-align: center;
+    }
+}

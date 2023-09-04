@@ -1,0 +1,30 @@
+.barra {
+    margin-top: -4px;
+    width: 100%;
+}
+
+.barra h1 {
+    line-height: 0px;
+    font-size: 20px;
+}
+
+.barra i {
+    color: var(--white-color);
+    margin: 0 40px 0 40px;
+}
+
+/* RESPOSIVIDADE */
+@media (max-width:785px) {
+    .barra {
+        margin-top: -9px;
+        height: 35px;
+    }
+
+    .barra h1 {
+        font-size: 15px;
+    }
+
+    .barra i {
+        font-size: 15px;
+    }
+}

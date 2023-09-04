@@ -1,0 +1,151 @@
+.container-planos {
+    background-color: #222222;
+}
+
+.content-planos {
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    gap: 20px;
+    padding-bottom: 50px;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.title-planos h1 {
+    padding-top: 40px;
+    text-align: center;
+    font-size: 82px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.content-planos img {
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-color);
+}
+
+.passeDiv-img {
+    padding: 0px;
+    border: 0px;
+}
+
+.content-planos h1 {
+    font-size: 42px;
+    margin: 0px;
+}
+
+.passeDiv,
+.passeDiv2 {
+    width: 390px;
+}
+
+.passeDiv2 {
+    margin-bottom: 37px;
+}
+
+.passeDiv2Text {
+    background-color: red;
+    padding: 2px 2px 2px 10px;
+    margin: 0px;
+}
+
+.passeDiv2Text p {
+    font-size: 19px;
+    font-weight: bold;
+    margin: 5px;
+    text-align: center;
+}
+
+.passeDivText {
+    margin: 0px;
+    padding: 2px 2px 2px 0px;
+    background-color: var(--black-color);
+}
+
+.passeDivText h1 {
+    padding: 2px 2px 2px 10px;
+    line-height: 50.4px;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.textValorePlanos {
+    color: var(--white-color);
+}
+
+.passeDivButton {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 83px;
+    background-color: #B4B4B4;
+}
+
+.passeDivButton p {
+    padding: 0 0 0 0;
+    color: #787878;
+    font-size: 20px;
+}
+
+.passeDivButton button {
+    width: 125px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #787878;
+    color: #787878;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    background-color: #B4B4B4;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.passeDivButton button:hover {
+    border: 2px solid var(--black-color);
+    color: var(--black-color);
+    box-shadow: 5px 5px 5px var(--black-light);
+    transform: scale(1.1);
+    transition: 500ms;
+}
+
+.passeDiv2Button button {
+    width: 125px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid red;
+    color: red;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    background-color: #B4B4B4;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.passeDiv2Button button:hover {
+    border: 2px solid red;
+    color: red;
+    box-shadow: 5px 5px 5px var(--primary-color);
+}
+
+
+/* RESPOSIVIDADE */
+@media (max-width:672px) {
+
+    .passeDiv,
+    .passeDiv2 {
+        width: 300px;
+    }
+
+    .title-planos {
+        margin-bottom: 80px;
+    }
+
+    .title-planos h1 {
+        font-size: 8vh;
+    }
+
+}

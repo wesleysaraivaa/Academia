@@ -1,0 +1,112 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    box-shadow: 0 0.1rem 0.5rem var(--primary-color);
+    transition: all 0.5s;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-link {
+    transition: 0.5s ease;
+}
+
+.nav-link:hover {
+    color: var(--black-light);
+}
+
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+nav button {
+    width: 130px;
+    background-color: var(--black-light);
+    color: var(--white-color);
+    border: none;
+    border-top-right-radius: 30px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 5px 20px;
+}
+
+nav button:hover {
+    background: var(--black-color);
+    box-shadow: 5px 5px 5px #eee;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 500ms;
+}
+
+.nav-logo {
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+}
+
+.nav-logo img {
+    width: 100px;
+    padding-top: 10px;
+}
+
+/* RESPOSIVIDADE */
+@media (max-width:785px) {
+    .hamburguer {
+        display: block;
+    }
+
+    .hamburguer.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburguer.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguer.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+        background: rgba(255, 255, 255, 0.16);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(9.3px);
+        -webkit-backdrop-filter: blur(9.3px);
+        border: 1px solid rgba(255, 255, 255, 0.35);
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
